@@ -5,15 +5,15 @@ import spock.lang.Specification
 class OrderSpec extends Specification {
     def "Set  GetQuantity()"() {
         setup:
-        List order = Mock(List)
-        order.size() >> 10;
+        Order order = new Order()
 
         when: "set quantity and get quantity"
-        def quantity = order.size()
+        order.setQuantity(2)
+        def quantity = order.getQuantity()
 
 
         then: "compare with expected"
-        quantity == 10
+        quantity == 2
     }
 
     def "Test SetQuantity()"() {

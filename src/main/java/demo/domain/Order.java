@@ -19,7 +19,6 @@ public class Order {
     }
 
     public int getQuantity() {
-        System.out.println("++++++++++++++++++++++++");
         return quantity;
     }
 
